@@ -10,11 +10,15 @@
     {% for project in projects %}
     <div class="project-container">
         <h2>{{ project.title }}</h2>
-        <div class="project-image">
-            <img src="{% static project.image_path %}" alt="Project Image">
-        </div>
-        <div class="project-description">
-            <p>{{ project.description }}</p>
+        <div class="image-description">
+            <div class="image">
+                <img src="{% static project.image_path %}" alt="Project Image">
+            </div>
+            <div class="description">
+                <p>{{ project.description|linebreaks }}</p>
+                <p>Lien vers le repository GitHub : <a href="{{ project.url_github }}" target="_blank">{{ project.url_github }}</a></p>
+
+            </div>
         </div>
         <div class="skills-technologies">
             <div class="skills">
