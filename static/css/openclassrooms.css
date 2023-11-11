@@ -1,0 +1,52 @@
+.project-container {
+    background-color: #dbdbdb;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.project-container h2 {
+    position: relative;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.project-container h2::after{
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Espacement par rapport au texte */
+    left: 0.1%; /* Pourcentage pour la marge gauche */
+    width: 99.9%; /* Pourcentage pour la largeur */
+    border-bottom: 1px solid black; /* Trait de 1px de large */
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajuste l'image pour couvrir tout le conteneur sans déformation */
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.skills-technologies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills,
+.technologies {
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 48%;
+    padding-left: 10px;
+}

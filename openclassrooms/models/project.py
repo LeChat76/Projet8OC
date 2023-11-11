@@ -11,6 +11,7 @@ class Project(models.Model):
     title = models.CharField(max_length=255, null=True, blank=True)
     description = models.CharField(max_length=5000, null=True, blank=True)
     url_github = models.URLField(max_length=200)
+    image_path = models.CharField(max_length=200)
     skill = models.ManyToManyField(Skill)
     technology = models.ManyToManyField(Technology)
 

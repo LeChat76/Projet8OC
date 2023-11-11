@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/openclassrooms.css' %}">
+</head>
+<body>
+    <h1>Liste des projets de ma formation</h1>
+    {% for project in projects %}
+    <div class="project-container">
+        <h2>{{ project.title }}</h2>
+        <div class="project-image">
+            <img src="{% static project.image_path %}" alt="Project Image">
+        </div>
+        <div class="project-description">
+            <p>{{ project.description }}</p>
+        </div>
+        <div class="skills-technologies">
+            <div class="skills">
+                <h3>Compétences utilisées:</h3>
+                <ul>
+                    {% for skill in project.skill.all %}
+                        <li>{{ skill.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="technologies">
+                <h3>Outils utilisés:</h3>
+                <ul>
+                    {% for technology in project.technology.all %}
+                        <li>{{ technology.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
