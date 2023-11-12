@@ -16,9 +16,11 @@
             </div>
             <div class="description">
                 <p>{{ project.description|linebreaks }}</p>
-                <p>Lien vers le repository GitHub : <a href="{{ project.url_github }}" target="_blank">{{ project.url_github }}</a></p>
-
             </div>
+        </div>
+        <div class="url_github-duration">
+            <p>Lien vers le repository GitHub : <a href="{{ project.url_github }}" target="_blank">{{ project.url_github }}</a></p>
+            <p>Durée du projet : {{ project.project_duration }}</p>
         </div>
         <div class="skills-technologies">
             <div class="skills">

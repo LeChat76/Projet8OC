@@ -25,6 +25,9 @@
     display: flex;
     align-items: flex-start;
     gap: 10px; /* Espace entre l'image et la description */
+    background-color: #a59e9e;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .image {
@@ -35,14 +38,27 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 20px;
-    margin-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: -3.5px;
 }
 
 .description {
     flex: 1;
     margin-top: -10px;
     padding-left: 10px;
+}
+
+.url_github-duration {
+    /* display: flex; */
+    align-items: flex-start;
+    gap: 10px; /* Espace entre l'image et la description */
+    background-color: #a59e9e;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 .skills-technologies {
