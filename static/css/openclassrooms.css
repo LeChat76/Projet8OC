@@ -1,8 +1,12 @@
+h1 {
+    margin: 20px;
+}
+
 .project-container {
     background-color: #a2c2ca;
     border: 1px solid black;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 20px;
     border-radius: 20px;
 }
 
@@ -31,7 +35,7 @@
 }
 
 .image {
-    flex: 0 0 auto; /* Largeur automatique pour l'image */
+    flex: 0 0 auto;
 }
 
 .image img {
@@ -44,15 +48,13 @@
 }
 
 .description {
-    flex: 1;
+    /* flex: 1; */
     margin-top: -10px;
     padding-left: 10px;
 }
 
 .url_github-duration {
-    /* display: flex; */
     align-items: flex-start;
-    gap: 10px; /* Espace entre l'image et la description */
     background-color: #a59e9e;
     border-radius: 20px;
     margin-bottom: 10px;
@@ -68,7 +70,7 @@
 
 .skills,
 .technologies {
-    width: 48.8%;
+    width: 48.6%;
     padding-left: 10px;
     background-color: #a59e9e;
     border-radius: 20px;
@@ -81,4 +83,15 @@
 
 .technologies {
     border-bottom-right-radius: 20px;
+}
+
+.site-footer {
+    background-color: #a2c2ca;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
 }
