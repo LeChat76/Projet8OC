@@ -2,6 +2,7 @@
 
 
 cd /P8
+chmod +x build.sh
 
 # Install dependancies
 /opt/render/project/src/.venv/bin/python3.7 -m pip install --upgrade pip
