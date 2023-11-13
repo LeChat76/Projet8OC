@@ -7,6 +7,7 @@ h1 {
     border: 1px solid black;
     padding: 10px;
     margin: 20px;
+    margin-bottom: 10px;
     border-radius: 20px;
 }
 
@@ -87,11 +88,10 @@ h1 {
 
 .site-footer {
     background-color: #a2c2ca;
-    padding: 20px;
     border-radius: 20px;
     text-align: center;
     border-radius: 20px;
-    margin: 20px;
-    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     border: 1px solid black;
 }

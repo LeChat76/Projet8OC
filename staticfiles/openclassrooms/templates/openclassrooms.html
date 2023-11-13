@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Projects List</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/openclassrooms.css' %}">
 </head>
 <body>
@@ -19,7 +20,9 @@
             </div>
         </div>
         <div class="url_github-duration">
-            <p>Lien vers le repository GitHub : <a href="{{ project.url_github }}" target="_blank">{{ project.url_github }}</a></p>
+            {% if project.url_github %}
+                <p>Lien vers le repository GitHub : <a href="{{ project.url_github }}" target="_blank">{{ project.url_github }}</a></p>
+            {% endif %}
             <p>Durée du projet : {{ project.project_duration }}</p>
         </div>
         <div class="skills-technologies">
