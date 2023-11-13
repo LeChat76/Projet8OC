@@ -21,5 +21,5 @@ from django.urls import path, include
 app_name = 'lechat76_site'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', include('openclassrooms.urls')),
+    path('', include('openclassrooms.urls')),
 ]
