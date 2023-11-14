@@ -3,9 +3,8 @@
 ## Installation
 Clone the GitHub repository : `git clone https://github.com/LeChat76/Projet8OC.git`  
 Go to the created folder : `cd Projet8OC`  
-Create virtual environment :
-* `python -m venv .venv`
-* activate environment :
+Create virtual environment : `python -m venv .venv`
+- activate environment :
     * for Linux `source .venv/bin/activate`
     * for Windows `.\.venv\Scripts\activate`
 Install all needed libraries by typing : `pip install -r requirements.txt`

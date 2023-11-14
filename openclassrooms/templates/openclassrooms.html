@@ -1,14 +1,19 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mr_Robot</title>
+    <title>Le Chat!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/openclassrooms.css' %}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Liste des projets de ma formation</h1>
+    <header>
+        <h1>Liste des projets de ma formation</h1>
+    </header>
+    <!-- <div class="paw-prints-container"></div> -->
     {% for project in projects %}
     <div class="project-container" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
         <h2>{{ project.title }}</h2>
@@ -51,5 +56,6 @@
 </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="{% static 'js/openclassrooms.js' %}"></script>
+<!-- <script src="{% static 'js/randomize-background.js' %}"></script> -->
 </body>
 </html>
