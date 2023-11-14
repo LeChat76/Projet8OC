@@ -11,3 +11,4 @@ Create virtual environment :
 Install all needed libraries by typing : `pip install -r requirements.txt`
 ## Execution
 Simply launch `py .\main.py` and go to `http://127.0.0.1:8000` from your favorite web browser.
+If online, you can access to this web site directly from internet : `https://lechat76-portfolio.onrender.com/`.
