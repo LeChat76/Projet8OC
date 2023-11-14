@@ -1,8 +1,8 @@
 # My portfolio
 ## Project 8 Openclassrooms : a simple web site where I expose all my projects learned when training.
 ## Installation
-`git clone https://github.com/LeChat76/Projet8OC.git`  
-`cd Projet8OC`  
+Clone the GitHub repository : `git clone https://github.com/LeChat76/Projet8OC.git`  
+Go to the created folder : `cd Projet8OC`  
 Create virtual environment :
 * `python -m venv .venv`
 * activate environment :
